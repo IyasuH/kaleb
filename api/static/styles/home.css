@@ -1,0 +1,219 @@
+a {
+    color: inherit;
+    text-decoration: none;
+  }
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: "Oswald", sans-serif;
+}
+.header li{
+    list-style: none;
+  }
+  .header{
+    background-color: rgba(0, 0, 0, 1);
+  }
+  .navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem 1.5rem;
+  }
+
+  .hamburger{
+    display: none;
+  }
+
+  .bar{
+    display: block;
+    width: 23px;
+    height: 2px;
+    /* border-radius: .5px; */
+    margin: 6px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+  }
+
+  .nav-menu{
+    display: flex;
+    /* border: 2px solid green; */
+    width: auto;
+    margin-left: 5rem;
+    padding: 0 0;
+    justify-content: space-between;
+  }
+  .nav-item{
+    padding: 0rem 1rem;
+    /* border: 1px solid red; */
+  }
+  .nav-link{
+    font-size: 15px;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    /* border: 2px solid green; */
+  }
+  .nav-link >i{
+    color: white;
+  }
+  .nav-link >i:hover{
+    color: #cc3b3b;
+  }
+  .nav-link:hover{
+    color: #cc3b3b;
+    background-color: inherit;
+  }
+  .nav-logo{
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.035em;
+    word-spacing: 0.022em;
+    padding: .3rem;
+    color: white;
+    line-height: 1.7;
+  }
+  .nav-logo >span{
+    color: #cc3b3b;
+  }
+  .nav-logo:hover{
+    background-color: inherit;
+  }
+  @media only screen and (max-width: 768px){
+    .navbar{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    .nav-menu{
+      position: fixed;
+      left: -100%;
+      height: 73%;
+      top: 2rem;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+      padding: 1rem 0rem;
+      z-index: 1;
+    }
+    .nav-menu.active{
+      left: -12%;
+      opacity: 1 !important;
+      padding: 4rem 0rem;
+      background-color: rgba(0, 0, 0, 1);
+      z-index: 2 !important;
+    }
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+.home-main{
+    background-color: #bd0000;
+    height: 30%;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 1rem 1rem;
+    /* border: 2px solid red; */
+    color: white;
+    height: auto;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+}
+
+.contact >h2{
+    /* border: 2px solid green; */
+    padding: .5rem 2rem;
+    font-weight: 500;
+}
+
+.contact >h5{
+    color: rgb(200,200,200);
+    font-weight: 200;
+    font-size: 14px;
+    /* border: 1px solid red; */
+}
+
+.phoneNum{
+    color: rgb(100, 100, 100);
+    font-weight: 100;
+    letter-spacing: 0.01rem;
+}
+
+#email{
+    text-transform: lowercase;
+    text-decoration: underline;
+    text-decoration-thickness: 0.1em;
+    color: rgb(200,200,200);
+    font-weight: 200;
+}
+#email:hover{
+    color: #cc3b3b;
+}
+
+.social-meida{
+    font-size: 20px;
+    /* border: 1px solid brown; */
+    padding: 10px 0px;
+}
+.social-meida >a:hover{
+    color: #cc3b3b;
+}
+
+.fab{
+    margin: 10px 15px;
+}
+
+.copyright{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(15, 15, 15);
+    padding: 3rem 2rem;
+}
+
+.copyright >a{
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.035rem;
+    word-spacing: 0.040rem;
+    color: rgb(220,220,220);
+}
+
+.copyright >a:hover{
+    color: #cc3b3b;
+}
+
+
+.copyright >p{
+    font-weight: 200;
+    font-size: 14px;
+    color: rgb(100, 100, 100);
+}
+
+.copyright >p>a{
+    color: rgb(130, 130, 130);
+    font-weight: 600;
+    text-decoration: underline;
+}
