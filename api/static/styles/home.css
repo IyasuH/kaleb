@@ -69,7 +69,6 @@ body, html {
     font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;
-    font-weight: 600;
     letter-spacing: 0.035em;
     word-spacing: 0.022em;
     padding: .3rem;
@@ -129,8 +128,82 @@ body, html {
 }
 
 .main-hero-image{
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5), url(""));
+  background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.15)), url("/static/img/kaleb.png");
+  height: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  /* border: 2px solid blue; */
 }
+
+.main-hero-text{
+  /* border: 2px solid green; */
+  text-align: left;
+  position: absolute;
+  top: 55%;
+  left: 4%;
+  width: 55%;
+  color: white;
+}
+
+.main-hero-text >h1{
+  text-transform: uppercase;
+  letter-spacing: 0.035em;
+  word-spacing: 0.022em;
+  line-height: 1.4;
+}
+
+.main-hero-text >h1>span{
+  color: #bd0000;
+}
+
+#type-typer{
+  display: inline-block;
+  line-height: 1.5;
+  font-weight: 100 !important;
+  font-size: 14px;
+  letter-spacing: 0.022em;
+  color: rgba(255, 255, 255, .5);
+
+  text-transform: uppercase;
+  /* border-right: 2px solid #fff; */
+  /* animation: cursor 1s step(2) infinite; */
+}
+/* @keyframes cursor{ */
+  /* from, to {border-color: transparent;} */
+  /* 0% {border-color: #fff;} */
+/* } */
+
+.achivements-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px , 1fr));
+  column-gap: 20px;
+  row-gap: 20px;
+}
+.achivement{
+  width: 100px;
+  height: 100px;
+  border: 2px solid yellow;
+  box-sizing: border-box;
+}
+
+#achivement-1{
+  grid-area: 1/1;
+}
+
+#achivement-2{
+  grid-area: 1/2;
+}
+
+#achivement-3{
+  grid-area: 2/1;
+}
+
+#achivement-4{
+  grid-area: 2/2;
+}
+
 
 .contact{
     display: flex;

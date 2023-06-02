@@ -16,3 +16,19 @@ function closeMenu(){
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }
+
+// for type-typer
+
+document.addEventListener("DOMContentLoaded", function(){
+    let full_text=0;
+    const text = "And I'm Writer | Director | Social Meida Consultant | Enterpreneur | Branding Expert | Country Director | Founder of Firtuna.";
+    function typeText(){
+        if (full_text < text.length){
+            document.getElementById("type-typer").innerHTML += text.charAt(full_text);
+            full_text++;
+            let speed = Math.floor(Math.random()*150)+50;
+            setTimeout(typeText, speed)
+        }
+    }
+    typeText();
+})
