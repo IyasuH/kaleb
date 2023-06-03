@@ -18,7 +18,6 @@ function closeMenu(){
 }
 
 // for type-typer
-
 document.addEventListener("DOMContentLoaded", function(){
     let full_text=0;
     const text = "And I'm Writer | Director | Social Meida Consultant | Enterpreneur | Branding Expert | Country Director | Founder of Firtuna.";
@@ -32,3 +31,18 @@ document.addEventListener("DOMContentLoaded", function(){
     }
     typeText();
 })
+
+// to stick topnav bar on the top
+var navbar = document.getElementById("cotmTopnav")
+
+window.onscroll = function(){scrollFunction()};
+
+var sticky = navbar.offsetTop;
+
+function scrollFunction(){
+    if(window.pageYOffset >= sticky){
+        navbar.classList.add("sticky");
+    } else {
+        navbar.classList.remove("sticky");
+    }
+}

@@ -59,10 +59,10 @@ body, html {
     color: white;
   }
   .nav-link >i:hover{
-    color: #cc3b3b;
+    color: #bd0000;
   }
   .nav-link:hover{
-    color: #cc3b3b;
+    color: #bd0000;
     background-color: inherit;
   }
   .nav-logo{
@@ -76,7 +76,7 @@ body, html {
     line-height: 1.7;
   }
   .nav-logo >span{
-    color: #cc3b3b;
+    color: #bd0000;
   }
   .nav-logo:hover{
     background-color: inherit;
@@ -120,6 +120,11 @@ body, html {
     .hamburger.active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
     }
+}
+
+.bg-break{
+  height: 2%;
+  background-color: #bd0000;
 }
 
 .home-main{
@@ -170,22 +175,71 @@ body, html {
   /* border-right: 2px solid #fff; */
   /* animation: cursor 1s step(2) infinite; */
 }
-/* @keyframes cursor{ */
-  /* from, to {border-color: transparent;} */
-  /* 0% {border-color: #fff;} */
-/* } */
+.achivements{
+  padding: 4%;
+  /* border: 2px solid blue; */
+  display: flex;
+  /* align-items: safe; */
+  background-color: black;
+  justify-content: space-around;
+}
+
+.achivement-pic{
+  height: 260px;
+  width: 35%;
+  /* border: 2px solid blueviolet; */
+}
+
+#achivement-img{
+  /* max-width: ; */
+  height: 350px;
+  max-width: fit-content;
+}
+
+@media only screen and (max-width: 768px){
+  #achivement-img{
+    /* width: 318px !important; */
+    width: 212px !important;
+    height: 160.8px !important;
+    /* height: 241.2px !important; */
+    max-width: fit-content;
+    /* height: 160.8px; */
+  }
+}
 
 .achivements-list{
   display: grid;
+  /* border: 2px solid green; */
+  width: 35%;
+  padding: 3% 0%;
   grid-template-columns: repeat(auto-fit, minmax(100px , 1fr));
   column-gap: 20px;
   row-gap: 20px;
 }
 .achivement{
-  width: 100px;
-  height: 100px;
-  border: 2px solid yellow;
+  width: 135px;
+  height: 120px;
+  /* border: 2px solid yellow; */
+  padding-bottom: 30%;
   box-sizing: border-box;
+}
+
+.achivement >h1{
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+  font-family: fantasy;
+  color: #bd0000;
+}
+
+.achivement >p{
+  font-weight: 300;
+  color: white;
+  font-size: 14px;
+  text-transform: capitalize;
+  letter-spacing: 0.015em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #achivement-1{
@@ -204,13 +258,122 @@ body, html {
   grid-area: 2/2;
 }
 
+.affilate-participate{
+  display: flex;
+  background-color: black;
+  /* flex-direction: column; */
+  /* border: 2px solid green; */
+  padding: 4%;
+  justify-content: space-between;
+}
+
+.affiliate-desc{
+  /* border: 2px solid green; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.affiliate-desc >h1{
+  font-family: fantasy;
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: #bd0000;
+  text-transform: uppercase;
+}
+
+.affiliate-desc >p{
+  color: white;
+}
+
+.affiliate-pics{
+  /* border: 2px solid green; */
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column;
+  /* align-items: center; */
+  /* align-items: end; */
+  padding: 0 4px;
+}
+
+.affiliate-pics-col{
+  /* align-items: end; */
+  flex: 80%;
+  padding: 0 2px;
+  /* align-items: left; */
+}
+
+.affiliate-pics-col img{
+  margin-top: 8px;
+  width: 137px;
+  height: 137px;
+  vertical-align: super;
+  padding: 4px 4px;
+  background-color: rgb(220,220,220);
+  border-radius: 4px;
+}
+
+#american-spaces{
+  width: 120px;
+  height: 120px;
+}
+#us-embassy{
+  width: 120px;
+  height: 120px;
+}
+#action-{
+  width: 120px;
+  height: 120px;
+}
+
+#job-creation{
+  width: 215px;
+  height: 100px;
+}
+
+#Goethe{
+  height: 102.85px;
+  width: 160px;
+}
+
+#diamond-hotel{
+  width: 190px;
+  height: 150.5px;
+}
+#Sl{
+  width: 300px;
+  height: 147.8px;
+}
+#selam{
+  width: 220px;
+  height: 146.4px;
+}
+#caramel{
+  width: 220px;
+  height: 120px;
+}
+#undp{
+  height: 250px;
+  width: 124px;
+  vertical-align: top;
+}
+
+#Lot{
+  width: 200px;
+  height: 146px; 
+}
+
+#eu{
+  width: 200px;
+  height: 133.33px;
+}
 
 .contact{
     display: flex;
     flex-direction: column;
     background-color: black;
     padding: 1rem 1rem;
-    /* border: 2px solid red; */
     color: white;
     height: auto;
     align-items: center;
@@ -219,7 +382,6 @@ body, html {
 }
 
 .contact >h2{
-    /* border: 2px solid green; */
     padding: .5rem 2rem;
     font-weight: 500;
 }
@@ -245,7 +407,7 @@ body, html {
     font-weight: 200;
 }
 #email:hover{
-    color: #cc3b3b;
+    color: #bd0000;
 }
 
 .social-meida{
@@ -254,7 +416,7 @@ body, html {
     padding: 10px 0px;
 }
 .social-meida >a:hover{
-    color: #cc3b3b;
+    color: #bd0000;
 }
 
 .fab{
@@ -279,7 +441,7 @@ body, html {
 }
 
 .copyright >a:hover{
-    color: #cc3b3b;
+    color: #bd0000;
 }
 
 
