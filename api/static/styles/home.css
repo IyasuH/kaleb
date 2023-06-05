@@ -17,7 +17,7 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: .5rem 1.5rem;
+    padding: .2rem 1.5rem;
   }
 
   .hamburger{
@@ -120,6 +120,14 @@ body, html {
     .hamburger.active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
     }
+}
+
+.sticky{
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  background-color: rgba(10,10,10,0.7);
+  width: 100%;
 }
 
 .bg-break{
@@ -235,9 +243,10 @@ body, html {
 
 .achivement >p{
   font-weight: 300;
-  color: white;
+  /* color: white; */
+  color: rgb(220,220,220);
   font-size: 14px;
-  text-transform: capitalize;
+  text-transform: uppercase;
   letter-spacing: 0.015em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -261,7 +270,7 @@ body, html {
 .affilate-participate{
   display: flex;
   background-color: black;
-  /* flex-direction: column; */
+  flex-direction: column;
   /* border: 2px solid green; */
   padding: 4%;
   justify-content: space-between;
@@ -284,7 +293,11 @@ body, html {
 }
 
 .affiliate-desc >p{
-  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.015em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(220,220,220);
+  /* color: white; */
 }
 
 .affiliate-pics{
@@ -309,9 +322,15 @@ body, html {
   width: 137px;
   height: 137px;
   vertical-align: super;
-  padding: 4px 4px;
+  /* border: 3px solid #bd0000; */
   background-color: rgb(220,220,220);
-  border-radius: 4px;
+  /* animation: all .3s ease-in-out; */
+  /* background-color: #bd0000; */
+  /* border-radius: 4px; */
+}
+
+.affiliate-pics-col img:hover{
+  transform: scale(1.2);
 }
 
 #american-spaces{
@@ -368,6 +387,290 @@ body, html {
   width: 200px;
   height: 133.33px;
 }
+
+.projects-list{
+  display: flex;
+  flex-direction: column;
+  /* padding: 4%; */
+}
+
+.bgp-break{
+  height: 10px;
+  background-color: #bd0000 !important;
+}
+
+.project{
+  height: 90%;
+  background-color: black;
+  padding: 4%;
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.project-desc h1{
+  font-family: fantasy;
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: #bd0000;
+  text-transform: uppercase;
+}
+
+.project-desc h3{
+  font-size: 22px;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: white;
+}
+
+.project-desc p{
+  line-height: 1.5;
+  font-size: 14px;
+  letter-spacing: 0.022em;
+  color: rgba(255, 255, 255, .5);
+  text-transform: uppercase;
+}
+
+.project-pics{
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column;
+  padding: 0 4px;
+}
+
+.project-pics-col{
+  flex: 80%;
+  padding: 0 2px;
+  overflow: hidden;
+}
+
+.project-pics-col img{
+  margin-top: 8px;
+  width: 220px;
+  height: 220px;
+  vertical-align: super;
+  /* border: 3px solid #bd0000; */
+  background-color: rgb(220,220,220);
+}
+
+@media only screen and (max-width: 768px){
+  #pro-img-04-1{
+    width: 210px !important;
+    height: 136.69px !important;
+  }
+  
+  #pro-img-04-2{
+    width: 210px !important;
+    height: 131.277px !important;
+  }
+  
+  
+  #pro-img-03-1{
+    width: 210px !important;
+    height: 262.5px !important;
+  }
+  
+  #pro-img-03-2{
+    width: 210px !important;
+    height: 268.8668px !important;
+  }
+  
+  
+  #pro-img-02-1{
+    width: 250px;
+    height: 251.6px;
+  }
+  
+  #pro-img-02-2{
+    width: 250px;
+    height: 191.35px;
+  }
+  
+  #pro-img-01-1{
+    width: 200px;
+    height: 151.3px;
+  }
+  
+  #pro-img-01-2{
+    width: 200px;
+    height: 267px;
+  }
+  
+  #pro-img-01-3{
+    width: 200px;
+    height: 282.6px;
+  }
+  
+  #pro-img-01-4{
+    width: 200px;
+    height: 277.5px;
+  }  
+}
+
+#pro-img-04-1{
+  width: 250px;
+  height: 162.7px;
+}
+
+#pro-img-04-2{
+  width: 250px;
+  height: 156.2px;
+}
+
+
+#pro-img-03-1{
+  width: 250px;
+  height: 312.5px;
+}
+
+#pro-img-03-2{
+  width: 250px;
+  height: 320px;
+}
+
+
+#pro-img-02-1{
+  width: 250px;
+  height: 251.6px;
+}
+
+#pro-img-02-2{
+  width: 250px;
+  height: 191.35px;
+}
+
+
+#pro-img-01-1{
+  width: 200px;
+  height: 151.3px;
+}
+
+#pro-img-01-2{
+  width: 200px;
+  height: 267px;
+}
+
+#pro-img-01-3{
+  width: 200px;
+  height: 282.6px;
+}
+
+#pro-img-01-4{
+  width: 200px;
+  height: 277.5px;
+}
+
+
+.all-about{
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (max-width: 768px){
+  .about-me-pic img{
+    width: 270px !important;
+    height: 180px !important;
+  }
+}
+.about-me-pic{
+  background-color: black;
+}
+
+.about-me{
+  display: flex;
+}
+
+.about-me-text{
+  background-color: black;
+  padding: 4%;
+}
+
+.about-me-text h1{
+  font-family: fantasy;
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: #bd0000;
+  text-transform: uppercase;
+}
+
+.about-me-text p{
+  line-height: 1.5;
+  font-size: 14px;
+  letter-spacing: 0.022em;
+  color: rgba(255, 255, 255, .5);
+  text-transform: uppercase;
+}
+
+.personal-skills{
+  background-color: black;
+  padding: 4%;
+}
+
+.personal-skills h1{
+  font-family: fantasy;
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: #bd0000;
+  text-transform: uppercase;
+}
+
+.personal-skills p{
+  line-height: 1.5;
+  font-size: 14px;
+  letter-spacing: 0.022em;
+  color: rgba(255, 255, 255, .5);
+  text-transform: uppercase;
+}
+
+.personal-skills li{
+  line-height: 1.5;
+  font-size: 14px;
+  letter-spacing: 0.022em;
+  color: rgba(255, 255, 255, .5);
+  text-transform: uppercase;
+}
+
+.edu-background{
+  background-color: black;
+  padding: 4%;
+}
+
+.edu-background h1{
+  font-family: fantasy;
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: #bd0000;
+  text-transform: uppercase;
+}
+
+.edu-background h4{
+  font-size: 22px;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: white;
+}
+
+.edu-background h3{
+  font-family: fantasy;
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: #bd0000;
+  text-transform: uppercase;
+}
+
+.edu-background p{
+  line-height: 1.5;
+  font-size: 14px;
+  letter-spacing: 0.022em;
+  color: rgba(255, 255, 255, .5);
+  text-transform: uppercase;
+}
+
 
 .contact{
     display: flex;
