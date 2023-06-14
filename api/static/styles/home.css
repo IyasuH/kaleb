@@ -244,7 +244,8 @@ body, html {
 .achivement >p{
   font-weight: 300;
   /* color: white; */
-  color: rgb(220,220,220);
+  color: rgb(220,220,220, .6);
+  /* color: rgba(255, 255, 255, .5) */
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 0.015em;
@@ -296,17 +297,17 @@ body, html {
   text-transform: uppercase;
   letter-spacing: 0.015em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: rgb(220,220,220);
+  /* color: rgb(220,220,220); */
+  color: rgba(255, 255, 255, .5)
   /* color: white; */
 }
 
 .affiliate-pics{
   /* border: 2px solid green; */
+  align-items: center !important;
   display: flex;
   flex-wrap: wrap;
   flex-flow: column;
-  /* align-items: center; */
-  /* align-items: end; */
   padding: 0 4px;
 }
 
@@ -561,17 +562,26 @@ body, html {
   height: 277.5px;
 }
 
-
 .all-about{
   display: flex;
   flex-direction: column;
 }
 @media only screen and (max-width: 768px){
   .about-me-pic img{
-    width: 270px !important;
-    height: 180px !important;
+    /* width: 300px !important; */
+    width: 260px !important;
+    /* height: 445.8px !important; */
+    height: 386.36px !important;
+    /* border: 2px solid red; */
+    margin-top: 20%;
   }
 }
+
+.about-me-pic img{
+  width: 500px;
+  height: 743px;
+}
+
 .about-me-pic{
   background-color: black;
 }

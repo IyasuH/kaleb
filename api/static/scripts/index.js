@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function(){
         if (full_text < text.length){
             document.getElementById("type-typer").innerHTML += text.charAt(full_text);
             full_text++;
-            let speed = Math.floor(Math.random()*150)+50;
+            let speed = Math.floor(Math.random()*120)+50;
             setTimeout(typeText, speed)
         }
     }
